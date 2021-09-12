@@ -6,7 +6,7 @@ set editing-mode vi
 set keymap vi
 ```
 
-## python interactive environment
+## Python interactive environment
 
 Rather than importing the commonly used packages like numpy, pandas, matploblib everytime in a new interactive session. Put them in the pystartup file. 
 
@@ -56,3 +56,4 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 ```
+More information from the [documentation](https://ipython.readthedocs.io/en/stable/interactive/tutorial.html?highlight=startup#startup-files)
