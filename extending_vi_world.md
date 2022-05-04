@@ -1,10 +1,16 @@
 ## Terminal
 
-The key binding can be set to **vi** for bash by adding the following lines in `~/.inputrc`
+For Bash terminal, the key binding can be set to **vi** by adding the following lines in `~/.inputrc`
 ```
 set editing-mode vi
 set keymap vi
 ```
+
+Similary, for the fish terminal, add the following line in the `~/.config/fish/config.fish`
+```
+fish_vi_key_bindings
+```
+[Reference](https://stackoverflow.com/questions/28444740/how-to-use-vi-mode-in-fish-shell)
 
 ## Python interactive environment
 
