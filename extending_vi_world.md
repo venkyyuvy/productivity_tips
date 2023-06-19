@@ -13,6 +13,11 @@ If you like fish terminal, it can be made as the default terminal in mac using t
   - Change Login shell to /usr/local/bin/fish.
   - Press OK, log out and in again.
 
+then, run the followin commands in the terminal
+ > % fish
+
+ > % fish_add_path /opt/homebrew/bin
+
 Similary, for the fish terminal, add the following line in the `~/.config/fish/config.fish`
 ```
 fish_vi_key_bindings
