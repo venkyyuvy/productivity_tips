@@ -6,10 +6,12 @@ set editing-mode vi
 set keymap vi
 ```
 If you like fish terminal, it can be made as the default terminal in mac using the following steps:
+
+
  From System Preferences: 
-   User and Groups → ctrl-click on Current User → Advanced Options... 
-   Change Login shell to /usr/local/bin/fish.
-   Press OK, log out and in again.
+  - User and Groups → ctrl-click on Current User → Advanced Options... 
+  - Change Login shell to /usr/local/bin/fish.
+  - Press OK, log out and in again.
 
 Similary, for the fish terminal, add the following line in the `~/.config/fish/config.fish`
 ```
