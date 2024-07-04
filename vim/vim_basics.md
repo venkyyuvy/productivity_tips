@@ -7,11 +7,11 @@ Enter command mode while in insert mode `Esc` key
 ---------
 Scrolling
 ---------
-use C-e or C-y for moving the screen up or down by one line.
-use C-d or C-u for moving half screen.
-use C-f or C-B for moving full screen. 
+- use `C-e` or `C-y` for moving the screen up or down by one line.
+- use `C-d` or `C-u` for moving half screen.
+- use `C-f` or `C-b` for moving full screen. 
 
-Bring current line to middle, top and bottom - zz, zt and zb 
+- Bring current line to middle, top and bottom - `zz`, `zt` and `zb` respectively.
 
 ----------
 Traversing
@@ -24,16 +24,16 @@ Traversing
 - end of a document is G
 
 - word is delimited with `-!@#$%^&*()`
-- Word is delimited with only white space
+- WORD is delimited with only white space
 
-- w move to the start of next word
-- W moves to the start of next WORD
+- `w` move to the start of next word
+- `W` moves to the start of next WORD
 
-- b goes to start of previous word, similarly for B
-- e goes to the end of current word, similarly for E
+- `b` goes to start of previous word, similarly for `B`
+- `e` goes to the end of current word, similarly for `E`
 
-- start of a line is 0, use ^ for non white character start
-- end of a line is $ 
+- start of a line is `0`, use `^` for non white character start
+- end of a line is `$` 
 
 
 - `f<c>` takes the cursor to the first occurence of character `c` in the same line after the current position of cursor.
@@ -58,11 +58,11 @@ Buffer
 ------
 Delete
 ------
-- x to delete a character 
-- dw to delete a word, C-w can used in insert mode to delete character 
-- 7dw to delete 7 words
-- dd to delete a line
-- 5dd to delete 5 lines
+- `x` to delete a character 
+- `dw` to delete a word, `C-w` can used in insert mode to delete words backwards 
+- `7dw` to delete 7 words
+- `dd` to delete a line
+- `5dd` to delete 5 lines
 - use `"<n>d` for delete and keep the copy to a specific register `n`.
 
 ----
@@ -99,9 +99,9 @@ Buffers and files
 - `:b#` opens the next file in the buffer
 
 
-- gt for moving between tabs
-- :tabe for creating new tab
-- :close for closing the current tab
+- `gt` for moving between tabs
+- `:tabe` for creating new tab
+- `:close` for closing the current tab
 
 - `:q` closes the current vim buffer
 - `:e` to open a new vi window for new file
