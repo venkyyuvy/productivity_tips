@@ -24,6 +24,33 @@ fish_vi_key_bindings
 ```
 [Reference](https://stackoverflow.com/questions/28444740/how-to-use-vi-mode-in-fish-shell)
 
+## ipython
+
+`ipython` also supports vim key bindings. Character `j` and `k` can be used to move between the commands in history. 
+
+- Add the following line to the file `~/.ipython/profile_default/ipython_config.py`, which will make the default model of ipython to be `vi` key binding. 
+
+```
+c.TerminalInteractiveShell.editing_mode = 'vi'
+```
+Add all the import statements in a `.py` file and put that file under the `~/.ipython/profile_default/startup/` directory.
+
+for example:
+> data_science.py
+```
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+More information from the [documentation](https://ipython.readthedocs.io/en/stable/interactive/tutorial.html?highlight=startup#startup-files)
+
+### Jupyter-lab
+
+```shell
+pip install jupyterlab-vim
+```
+
 ## Python interactive environment
 
 Rather than importing the commonly used packages like numpy, pandas, matploblib everytime in a new interactive session. Put them in the pystartup file. 
@@ -57,21 +84,4 @@ pd.Categorical(           pd.IntervalDtype(         pd.UInt64Index(
 ```
 More information [here](https://docs.python.org/3.0/tutorial/interactive.html#history-substitution)
 
-## Ipython
 
-Ipython also support these options. customize the file `~/.ipython/profile_default/ipython_config.py` 
-
-```
-c.TerminalInteractiveShell.editing_mode = 'vi'
-```
-Add all the import statements in a `.py` file and put that file under the `~/.ipython/profile_default/startup/` directory.
-
-for example:
-> data_science.py
-```
-import os
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-```
-More information from the [documentation](https://ipython.readthedocs.io/en/stable/interactive/tutorial.html?highlight=startup#startup-files)
